@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body id="body">
+    <div class="wrapper">
+      <header id="header">
+        <div class="container">
+          <div class="header_logo_content">
+            <div class="header_logo">
+              <div>
+                <img class="header_logo_img" src="./logo.png" alt="Логотип" />
+              </div>
+            </div>
+            <nav>
+              <ul class="nav_links">
+                <li class="mp_nav_li">
+                  <p class="mp_nav_link">
+                    Прокат
+                    <i class="icon_chevron_down"></i>
+                  </p>
+
+                  <div id="mp_nav_li_dropdown" class="mp_nav_li_dropdown">
+                    <ul class="mp_ul_dropdown">
+                      <li class="mp_li_dropdown">Пункт</li>
+                      <li class="mp_li_dropdown">Пункт</li>
+                      <li class="mp_li_dropdown">Пункт</li>
+                      <li class="mp_li_dropdown">Пункт</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mp_nav_li">
+                  <p class="mp_nav_link">Послуги</p>
+                  <div id="mp_nav_li_dropdown1" class="mp_nav_li_dropdown">
+                    <ul class="mp_ul_dropdown">
+                      <li class="mp_li_dropdown">Пункт 1</li>
+                      <li class="mp_li_dropdown">Пункт 2</li>
+                      <li class="mp_li_dropdown">Пункт 3</li>
+                      <li class="mp_li_dropdown">Пункт 4</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mp_nav_li">
+                  <p class="mp_nav_link">Про компанію</p>
+                </li>
+                <li><a class="mp_nav_link" href="#">Новини</a></li>
+                <li><a class="mp_nav_link" href="#">Контакти</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header_phone_content">
+            <a class="header_phone" href="tel:380123456313">+(380) 123456313</a>
+            <button class="header_btn">Зв'язатися з нами</button>
+            <button
+              id="hamburger"
+              type="button"
+              class="hamburger_navbar"
+              onclick="openCloseSideBar()"
+            >
+              <svg
+                id="svg"
+                width="40"
+                height="40"
+                viewBox="0 0 32 42"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g transform="matrix(1,0,0,1,-389.5,-264.004)">
+                  <g id="arrow_left2">
+                    <g transform="matrix(1,0,0,1,0,5)">
+                      <path
+                        id="top"
+                        d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967"
+                      />
+                    </g>
+                    <g
+                      transform="matrix(1,1.22465e-16,1.22465e-16,-1,0.00024296,564.935)"
+                    >
+                      <path
+                        id="bottom"
+                        d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967"
+                      />
+                    </g>
+                    <path id="middle" d="M390,284.967L420,284.967" />
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <aside class="side_bar">
+        <div
+          id="side_bar_overlay"
+          class="side_bar_overlay"
+          onclick="openCloseSideBar()"
+        ></div>
+        <div id="side_bar_content" class="side_bar_content">
+          <ul class="mp_side_bar_links">
+            <li class="mp_side_bar_li">
+              <p>Прокат</p>
+              <ul class="mp_side_bar_dropdown">
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+                <li>Пункт 4</li>
+              </ul>
+            </li>
+            <li class="mp_side_bar_li">Послуги</li>
+            <li class="mp_side_bar_li">Про компанію</li>
+            <li class="mp_side_bar_li">Новини</li>
+            <li class="mp_side_bar_li">Контакти</li>
+          </ul>
+          <button class="side_bar_btn">Зв'язатися з нами</button>
+        </div>
+      </aside>
+
+      <main>
+        <section class="hero_section">
+          <div class="paralax_content_image">
+            <img
+              id="paralaxImage"
+              class="paralax_image"
+              src="./bimage.jpg"
+              alt="paralax_image"
+            />
+            <div class="paralax_overlay"></div>
+          </div>
+          <div class="main_container">
+            <div class="content_rent">
+              <p class="rent_title">Оренда авто Львів</p>
+              <p class="rent_sub_title">Економимо ваш час і гроші.</p>
+              <button class="rent_button from-top" type="button">
+                Обрати авто
+              </button>
+            </div>
+          </div>
+        </section>
+        <article class="news_article">
+          <div class="main_container">
+            <p class="article_title">Новини</p>
+            <div class="news_content_card">
+              <div class="news_card">
+                <img class="news_card_image" src="./new.jpg" alt="Title" />
+                <div class="content_title">
+                  <p class="news_card_title">
+                    В прокаті з'явивився новий суперкар!!!
+                  </p>
+                </div>
+              </div>
+              <div class="news_card">
+                <img class="news_card_image" src="./new.jpg" alt="Title" />
+                <div class="content_title">
+                  <p class="news_card_title">
+                    В прокаті з'явивився новий суперкар!!!
+                  </p>
+                </div>
+              </div>
+              <div class="news_card">
+                <img class="news_card_image" src="./new.jpg" alt="Title" />
+                <div class="content_title">
+                  <p class="news_card_title">
+                    В прокаті з'явивився новий суперкар!!!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <section class="section_info">
+          <div class="main_container">
+            <p>
+              Ви хочете ознайомитися з визначними пам'ятками нашого міста або
+              приїжджаєте до Львова з діловою метою? Для зручності Вам потрібен
+              автомобіль. Оренда авто у Львові - найкраще рішення, під яким
+              мається на увазі мобільність, практичність і доступна ціна. Ми
+              надаємо транспортні засоби для всіх випадків життя. Це може бути
+              туристична поїздка, зустріч з інвесторами, урочистий захід,
+              трансфер гостей або ділових партнерів. Варіантів багато, тому наші
+              послуги завжди затребувані. LeoDrive - надійна компанія, яка
+              займає лідируючі позиції на ринку. Ми надаємо авто в оренду у
+              Львові для місцевих жителів і для гостей міста. Можлива оренда
+              авто з водієм і без, на добу або на кілька днів. В автопарку
+              представлені японські автомобілі Toyota і Lexus. Це універсальні
+              транспортні засоби, придатні для будь-яких умов експлуатації і для
+              вирішення різноманітних завдань. Всі автомобілі знаходяться в
+              ідеальному технічному стані. Ми ретельно за цим стежимо. Ви можете
+              в будь-який час зв'язатися з нами та замовити авто напрокат у
+              Львові! На які моменти потрібно звертати увагу, які документи
+              необхідні і які у нас ціни, ми розповімо докладніше.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="main_container">
+          <div class="footer_content">
+          <img class="header_logo_img" src="./logo.png" alt="Логотип" />
+          <ul class="mp_footer_list">
+            <li class="mp_footer_li">Послуги</li>
+            <li class="mp_footer_li">Асистенс</li>
+            <li class="mp_footer_li">Контакти</li>
+          </ul>
+          <ul class="mp_footer_list">
+            <li class="mp_footer_li">Про компанію</li>
+            <li class="mp_footer_li">Умови оренди</li>
+            <li class="mp_footer_li">Про нас</li>
+            <li class="mp_footer_li">Часті запитання</li>
+            <li class="mp_footer_li">Політика конфінденційності</li>
+          </ul>
+          <ul class="mp_footer_list">
+            <li class="mp_footer_li">Контакти</li>
+            <li class="mp_footer_li">email@gmail.com</li>
+            <li class="mp_footer_li">+(380) 1234563138</li>
+            <li class="mp_footer_li"><a href="https:/vk.com">Наш вк</a></li>
+          </ul>
+        </div>
+      </div>
+      </footer>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
